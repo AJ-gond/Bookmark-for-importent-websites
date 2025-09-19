@@ -1,0 +1,118 @@
+*{padding: 0%;
+  margin: 0%;
+  border:border-box;
+  overflow: none;
+}
+body{
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(29, 28, 28, 0.945), rgba(0, 128, 0, 0.545),pink,rgba(29, 28, 28, 0.945));
+}
+.aj{
+  width:100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+
+}
+  /* .heading{
+    background-color: rgb(134, 230, 230);
+    height: 60px;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+} */
+.glow-heading {
+  font-family: Roboto;
+  height: 60px; /* Fixed height */
+  width: 100%; /* Full width */
+  text-decoration:solid;
+  background: linear-gradient(to bottom, rgb(126, 17, 17), rgba(0, 0, 0, 0)); /* White glow effect */
+  color: #ffffff; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 24px; /* Font size */
+  font-weight: bold; /* Bold text */
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center; /* Ensures text is centered if it wraps */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White glow shadow */
+  position: relative; /* For pseudo-element positioning */
+  overflow: hidden; /* Hide overflow for pseudo-element */
+}
+
+/* Glow effect */
+.glow-heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(175, 145, 145, 0.222), rgba(0, 0, 0, 0)); /* Radial glow */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition */
+  pointer-events: none; /* Ensure overlay doesn't block hover */
+}
+ /* .glow-heading:hover{
+  color:; 
+} */
+.glow-heading:hover::before {
+  opacity: 1; /* Show glow on hover */
+}
+/* .flax{
+    border: 2px solid black;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+    
+
+.div1{
+  border:1px solid black;
+  height:90px;
+  width: 80px;
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden; /* ya fir scroll, auto */
+  /* white-space: nowrap; text ko ek line mein rakhne ke liye */
+  text-overflow: ellipsis;
+  box-shadow: 0 0 20px 1px black;
+  margin-top: 20px;
+   margin-left: 90px;
+   margin-bottom: 20px;
+   margin-right: 90px; 
+  transition: all 0.2s ease-out;
+
+  
+  
+
+    /* height: 90px;
+    width: 80px;
+   border: 2px solid black; 
+   margin-top: 20px;
+   margin-left: 9.5%;
+   margin-bottom: 20px;
+   padding-top: 20px;
+   display: inline-block;
+   justify-content:center; 
+   text-align: center; */
+   
+  }
+  .div1:hover{
+    transform: scale(1.2);
+  }
+a{
+  text-decoration: none;
+  color: rgba(32, 22, 22, 0.96);
+  font-weight:bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+img{
+  height: 50px;
+  width:50px;
+}
